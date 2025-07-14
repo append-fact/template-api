@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Resources\Templates\Pdfs\" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\Templates\**\*.cshtml" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="RazorLight" Version="2.3.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Core\Application\Application.csproj" />
+	</ItemGroup>
+
+</Project>
